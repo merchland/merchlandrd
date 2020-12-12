@@ -10,6 +10,14 @@
 		<meta name="mobile-web-app-capable" content="yes" />
 		<style type="text/css" title="Default">
 			/* fullscreen */
+
+			@font-face {
+  				font-family: 'custom';
+				font-style: normal;
+				font-weight: normal;
+				src: url("./output-2/Document\ Two.otf") format("opentype");
+}
+			
 			html {
 				height:100%;
 			}
@@ -42,8 +50,8 @@
 			}
 
 			.text-font{
-				font-family: 'Bebas Neue Bold';
-				font-size: 34px;
+				font-family: 'custom';
+				font-size: 30px;
 				font-weight:bold;
 			}
 
@@ -60,7 +68,7 @@
 				display: inline-block; 
 				margin: 10px;
 				margin-left: 55px;
-				font-family: cursive;
+				font-family: "custom";
 				font-weight: bold;
 			}
 
@@ -68,6 +76,15 @@
 				margin-left:140px!important;
 			}
 
+			.description-text{
+				font-family: "custom";
+				font-weight: bold;
+				color:turquoise;
+			}
+
+			.button-background{
+				background: rgb(69 74 69 / 30%)!important;
+			}
 			
 
 
@@ -101,14 +118,14 @@
 			  <div class="modal-content">
 				<div class="modal-header">
 				  <h5 class="modal-title text-font" id="exampleModalLabel">22 Merchland Road SE9 2BH</h5>
-				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <button type="button" class="close button-background" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				  </button>
 				</div>
 				<div class="modal-body">
 					
 				  <img src="./images/Merchland House Brochure-1.jpg" width="450" height="400"></img>
-				  <div class="positions">3 BEDROOMS, 1 ENSUITE BEDROOM AND ENSUITE BATHROOM, 1 BATHROOM, 1 WET ROOM, LOUNGE, KITCHEN AND BACKYARD</div>
+				  <div class="positions description-text">3 BEDROOMS, 1 ENSUITE BEDROOM AND ENSUITE BATHROOM, 1 BATHROOM, 1 WET ROOM, LOUNGE, KITCHEN AND BACKYARD</div>
 				
 				</div>
 			  </div>
@@ -119,13 +136,13 @@
 			  <div class="modal-content">
 				<div class="modal-header">
 				  <h5 class="modal-title text-font" id="locationModalLabel">22 Merchland Road SE9 2BH</h5>
-				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <button type="button" class="close button-background" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				  </button>
 				</div>
 				<div class="modal-body">
 					
-				  <img class="margin-fix" src="./images/location-image.jpeg" width="450" height="400"></img>
+				  <img class="margin-fix" src="./images/location-image.jpg" width="450" height="400"></img>
 				  
 				</div>
 			  </div>
@@ -136,16 +153,13 @@
 			  <div class="modal-content">
 				<div class="modal-header">
 				  <h5 class="modal-title text-font" id="floorModalLabel">22 Merchland Road SE9 2BH</h5>
-				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <button type="button" class="close button-background" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				  </button>
 				</div>
 				<div class="modal-body">
 					
-				  <img src="./images/ground floor.jpg" width="230" height="360"></img>
-				  <img src="./images/first floor.jpg" width="230" height="360"></img>
-				  <div class="inline">ground floor</div>
-				  <div class="inline inline-two">first floor</div>
+				  <img src="./images/FLOOR PLANS.jpg" width="465" height="450"></img>
 				</div>
 			  </div>
 			</div>
